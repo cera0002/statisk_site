@@ -14,7 +14,7 @@
 .hero span {
   display: inline-block;
   transform: scaleX(-1) translateX(-0.1rem);
-  color: darkgray;
+  color: #555555;
 }
 
 .logo a {
@@ -28,7 +28,7 @@
 .logo span {
   display: inline-block;
   transform: scaleX(-1) translateX(-0rem);
-  color: darkgray;
+  color: #555555;
 }
 
 /***** Style logo ******/
@@ -134,4 +134,109 @@
 
 .sold {
   opacity: 48%;
+}
+
+/***** Produkt ******/
+
+.product_container {
+  display: flex;
+  margin-left: 18vw;
+  margin-right: 5vw;
+  margin-top: 10vh;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.show {
+  flex: none;
+  padding-right: 2rem;
+}
+
+.info {
+  flex: none;
+}
+.product_name {
+  margin-bottom: 7px;
+  font-size: clamp(1.2rem, 4vw, 1.6rem);
+  font-variant-caps: all-small-caps;
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+}
+.product_pic {
+  height: 500px;
+  width: auto;
+}
+
+.product_cat {
+  margin-top: 12vh;
+  margin-bottom: 9px;
+  font-size: clamp(0.8rem, 4vw, 1.2rem);
+  font-variant-caps: all-small-caps;
+  text-decoration: none;
+  color: darkgrey;
+  font-weight: 300;
+}
+
+.product_name_big {
+  margin-bottom: 5px;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-variant-caps: all-small-caps;
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+
+.price {
+  margin-bottom: 30px;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  color: rgb(127, 127, 127);
+}
+
+.storrelser {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4vh;
+}
+.storrelser p {
+  border: 1px solid black;
+  padding: 10px 15px;
+  place-self: center;
+}
+
+.storrelser p:hover {
+  color: white;
+  background-color: black;
+  transition: 0.3s;
+}
+
+.kob_cta {
+  font-weight: 300;
+  font-size: clamp(0.8rem, 2vw, 1.1rem);
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  padding: 10px 50px;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.kob_cta:hover {
+  color: black;
+  background-color: white;
+  transition: 0.3s linear;
+  transform: scale(1.04s);
+}
+
+.features {
+  margin-bottom: 7px;
+  font-size: clamp(1.1rem, 4vw, 1.3rem);
+  font-variant-caps: all-small-caps;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
 }
