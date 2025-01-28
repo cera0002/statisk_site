@@ -1,3 +1,6 @@
+/***** Index ******/
+
+/***** Style variabler ******/
 .hero {
   font-family: sans-serif;
   font-weight: 800;
@@ -28,12 +31,16 @@
   color: darkgray;
 }
 
+/***** Style logo ******/
+
 .category {
   margin-top: 8vh;
   margin-left: 4.5vw;
   font-size: xx-large;
   font-weight: 500;
 }
+
+/***** Style kategorier ******/
 
 .category_list_container {
   display: flex;
@@ -64,4 +71,61 @@
 .category_link:hover {
   color: darkgray;
   text-decoration: underline;
+}
+
+/***** Produktliste ******/
+
+.product_list_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left: 5vw;
+  margin-right: 8vw;
+  margin-top: 10vh;
+}
+
+.product_card {
+  display: grid;
+  grid-template-rows: 4;
+  padding-left: 4vw;
+}
+
+.nr {
+  font-size: large;
+}
+
+.navn {
+  margin-top: 10px;
+  margin-bottom: 3px;
+  font-size: clamp(0.9rem, 2vw, 1.3rem);
+  font-variant-caps: all-small-caps;
+  text-decoration: none;
+  color: black;
+}
+
+.pris {
+  margin-bottom: 7px;
+  font-size: clamp(0.7rem, 2vw, 0.9rem);
+  color: rgb(127, 127, 127);
+  text-decoration: none;
+}
+
+.pris span {
+  text-decoration: line-through;
+  color: #bdbdbd;
+}
+.add {
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  text-decoration: underline;
+  font-variant-caps: all-small-caps;
+  place-self: center;
+  color: black;
+}
+
+.product_card:hover {
+  transform: scale(1.06);
+  opacity: 48%;
+}
+
+.sold {
+  opacity: 48%;
 }
