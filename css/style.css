@@ -159,7 +159,8 @@
   grid-template-columns: repeat(2, 1fr);
   margin-left: 18vw;
   margin-right: 18vw;
-  margin-top: 10vh;
+  margin-top: 4vh;
+  margin-bottom: 6vh;
   gap: 2rem;
 }
 
@@ -250,13 +251,16 @@
 
 .features {
   margin-bottom: 7px;
-  font-size: clamp(1.1rem, 4vw, 1.5rem);
+  font-size: clamp(1rem, 4vw, 1.5rem);
   font-variant-caps: all-small-caps;
   text-decoration: none;
   color: black;
   font-weight: 500;
 }
 
-.tekst p {
+.tekst {
+  margin-top: 10px;
+  margin-left: 10px;
   color: black;
+  line-height: 130%;
 }
