@@ -80,8 +80,24 @@
   grid-template-columns: repeat(auto-fill, 300px);
   margin-left: 2vw;
   margin-right: 2vw;
-  margin-top: 10vh;
+  margin-top: 7vh;
   justify-content: center;
+}
+
+.back {
+  display: block;
+  margin-left: 4vw;
+  margin-top: 8vh;
+  text-decoration: none;
+  font-size: x-large;
+  color: black;
+}
+
+.back:hover {
+  display: block;
+  color: darkgrey;
+  transition: 0.3s;
+  transform: scale(1.02);
 }
 
 .product_card {
@@ -133,18 +149,18 @@
 }
 
 .sold {
-  opacity: 48%;
+  opacity: 40%;
 }
 
 /***** Produkt ******/
 
 .product_container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   margin-left: 18vw;
-  margin-right: 5vw;
+  margin-right: 18vw;
   margin-top: 10vh;
   gap: 2rem;
-  flex-wrap: wrap;
 }
 
 .show {
@@ -189,7 +205,7 @@
 
 .price {
   margin-bottom: 30px;
-  font-size: clamp(0.9rem, 2vw, 1rem);
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
   color: rgb(127, 127, 127);
 }
 
@@ -234,9 +250,13 @@
 
 .features {
   margin-bottom: 7px;
-  font-size: clamp(1.1rem, 4vw, 1.3rem);
+  font-size: clamp(1.1rem, 4vw, 1.5rem);
   font-variant-caps: all-small-caps;
   text-decoration: none;
   color: black;
   font-weight: 500;
+}
+
+.tekst p {
+  color: black;
 }
