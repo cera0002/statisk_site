@@ -331,6 +331,19 @@
   }
 }
 
+p[style] {
+  color: black !important;
+  line-height: 130%;
+}
+
+span {
+  display: none; /* Skjul alle spans som standard */
+}
+
+span.important {
+  display: inline; /* Eller block, hvis det passer bedre */
+}
+
 /* .breadcrumbs {
   display: flex;
 }
