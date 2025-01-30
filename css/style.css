@@ -222,7 +222,7 @@
 }
 
 .product_cat {
-  margin-top: 8vh;
+  margin-top: 4vh;
   margin-bottom: 9px;
   font-size: clamp(0.8rem, 4vw, 1.2rem);
   font-variant-caps: all-small-caps;
@@ -287,7 +287,7 @@
 
 .features {
   margin-bottom: 7px;
-  font-size: clamp(1rem, 4vw, 1.5rem);
+  font-size: clamp(1.3rem, 4vw, 1.6rem);
   font-variant-caps: all-small-caps;
   text-decoration: none;
   color: black;
@@ -295,13 +295,14 @@
 }
 
 .tekst {
-  margin-top: 10px;
+  margin-top: 5px;
   margin-left: 10px;
   color: black;
   line-height: 130%;
+  list-style: none;
 }
 
-@media (min-width: 754px) and (max-width: 1069px) {
+@media (min-width: 856px) and (max-width: 1069px) {
   .features {
     display: none;
   }
@@ -311,7 +312,7 @@
   }
 }
 
-@media (max-width: 755px) {
+@media (max-width: 855px) {
   .product_container {
     display: block;
     margin-left: 14vw;
