@@ -86,11 +86,11 @@
 
 .back {
   display: block;
-  margin-left: 4vw;
-  margin-top: 5vh;
+  margin-left: 8vw;
+  margin-top: 4.5vh;
   text-decoration: none;
   font-size: x-large;
-  color: black;
+  color: #555555;
 }
 
 .back:hover {
@@ -255,13 +255,13 @@
   margin-right: auto;
   margin-bottom: 4vh;
 }
-.storrelser p {
+.storrelser option {
   border: 1px solid black;
   padding: 10px 15px;
   place-self: center;
 }
 
-.storrelser p:hover {
+.storrelser option:hover {
   color: white;
   background-color: black;
   transition: 0.3s;
@@ -329,3 +329,23 @@
     width: 100%;
   }
 }
+
+/* .breadcrumbs {
+  display: flex;
+}
+
+.breadcrumbs li {
+  display: inline;
+  margin-top: 2vh;
+  display: flex;
+  justify-content: space-around;
+  color: #8d8c8c;
+  font-size: small;
+  margin-left: 8vw;
+  padding-top: 6px;
+  padding-bottom: 4px;
+}
+
+.breadcrumbs li a {
+  color: #333333;
+} */
