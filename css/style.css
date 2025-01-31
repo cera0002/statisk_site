@@ -8,7 +8,7 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  margin-top: 22vh;
+  margin-top: 20vh;
 }
 
 .hero span {
@@ -329,6 +329,19 @@
     height: auto;
     width: 100%;
   }
+}
+
+p[style] {
+  color: black !important;
+  line-height: 130%;
+}
+
+span {
+  display: none; /* Skjul alle spans som standard */
+}
+
+span.important {
+  display: inline; /* Eller block, hvis det passer bedre */
 }
 
 /* .breadcrumbs {

@@ -20,7 +20,7 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
         <div class="info">
           <p class="product_cat">${data.brandname} | ${data.category}</p>
           <h2 class="product_name_big">${data.productdisplayname} / ${data.basecolour}</h2>
-          <p class="price"><span>${data.price},-</span> | 1364,61,-</p>
+          <p class="price"><span class="important">${data.price},-</span> | 1364,61,-</p>
           <form class="storrelser">
             <option>40</option>
             <option>41</option>
@@ -31,9 +31,15 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
           </form>
           <h3 class="kob_cta">BUY NOW</h3>
           <h3 class="features">/ Product description</h3>
-          <p class="tekst"${data.description} </p>
+          <p class="tekst">${data.description} </p>
            </div>
         `;
   });
 
 ////arbejd med htmlstruktur//
+
+document.querySelectorAll("span").forEach((span) => {
+  if (span.innerHTML.replace(/&nbsp;/g, "").trim() !== "") {
+    span.classList.add("important");
+  }
+});
