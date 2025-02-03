@@ -1,5 +1,8 @@
 let listContainer = document.querySelector(".product_list_container");
 
+const urlParams = new URLSearchParams(window.location.search);
+const category = urlParams.get("category");
+
 fetch(`https://kea-alt-del.dk/t7/api/products/`)
   .then((response) => response.json())
 
