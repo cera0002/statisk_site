@@ -17,6 +17,8 @@
   color: #555555;
 }
 
+/***** Style logo ******/
+
 .logo a {
   font-family: sans-serif;
   font-weight: 800;
@@ -31,8 +33,6 @@
   color: #555555;
 }
 
-/***** Style logo ******/
-
 .category {
   margin-top: 8vh;
   margin-left: 4.5vw;
@@ -40,6 +40,13 @@
   font-weight: 500;
 }
 
+.h_category {
+  margin-top: 4vh;
+  margin-left: 7.5vw;
+  margin-bottom: 8vh;
+  font-size: xx-large;
+  font-weight: 500;
+}
 /***** Style kategorier ******/
 
 .category_list_container {
@@ -100,8 +107,8 @@
   transform: scale(1.02);
 }
 
-.product_card,
-.product_card_soldout {
+.product_card {
+  position: relative;
   display: grid;
   grid-template-rows: 4;
   padding-left: 4vw;
@@ -110,7 +117,7 @@
   padding-right: 20px;
 }
 
-.sold {
+.sold_out {
   opacity: 40%;
 }
 
@@ -135,11 +142,11 @@
   text-decoration: none;
 }
 
-.pris span,
+/* .pris span,
 .price span {
   text-decoration: line-through;
   color: #bdbdbd;
-}
+} */
 .add {
   font-size: clamp(0.9rem, 2vw, 1.2rem);
   text-decoration: underline;
@@ -154,17 +161,11 @@
   transition: 0.3s;
 }
 
-.product_card_soldout:hover {
-  transform: scale(1.06);
-  opacity: 48%;
-  transition: 0.3s;
-}
-
 .image_container {
-  position: relative;
   display: inline-block;
 }
-.sold_out {
+
+.sale {
   position: absolute;
   top: 30px;
   right: 0px;

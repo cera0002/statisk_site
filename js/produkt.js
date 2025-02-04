@@ -15,13 +15,13 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
           <img
         src="https://kea-alt-del.dk/t7/images/webp/640/${productId}.webp"
         alt="${data.productdisplayname}" class="product_pic" />  
-            <p class="sold_out">SALE | ${data.discount}%</p>
+            <p class="sale">SALE | ${data.discount}%</p>
           </div>
         </div>
         <div class="info">
           <p class="product_cat">${data.brandname} | ${data.category}</p>
           <h2 class="product_name_big">${data.productdisplayname} / ${data.basecolour}</h2>
-          <p class="price"><span class="important">${data.price},-</span> | 1364,61,-</p>
+          <p class="price"><span class="important">${data.price},-</p>
           <form class="storrelser">
             <option>40</option>
             <option>41</option>
