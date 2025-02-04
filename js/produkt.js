@@ -1,6 +1,7 @@
-let productCard = document.querySelector(".product_container");
+const productId = new URLSearchParams(window.location.search).get("id");
+console.log("product loader...", productId);
 
-let productId = 1546;
+let productCard = document.querySelector(".product_container");
 
 fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
   .then((response) => response.json())
