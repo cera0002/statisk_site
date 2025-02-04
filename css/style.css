@@ -171,6 +171,7 @@
 
 .image_container {
   display: inline-block;
+  position: relative;
 }
 
 .sale {
@@ -231,6 +232,33 @@
 .product_pic {
   height: 500px;
   width: auto;
+}
+
+.sale_product {
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.707);
+  color: darkred;
+}
+
+.soldout_product {
+  position: absolute;
+  top: 370px;
+  right: 180px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.707);
+  color: black;
 }
 
 .product_cat {
