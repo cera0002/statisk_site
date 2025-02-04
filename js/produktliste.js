@@ -20,15 +20,15 @@ function showList(products) {
   const markup = products
     .map(
       (product) =>
-        `
-      <div class="product_card ${product.discount && ".sale"}">
+        ` <div class="product_card">
           <p class="nr">//</p>
-          <a href="produkt.html?id=${product.id}" class="billede"> <img src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp"
+          <a href="produkt.html?id=${product.id}" class="billede ${product.soldout && "sold_out"} "> <img src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp"
         alt="${product.productdisplayname}"/>   
-          <p class="sale">SALE | ${product.discount}%</p>
-          <a href="produkt.html?id=${product.id}" class="navn">/ ${product.productdisplayname}</a>
-          <a href="produkt.html?id=${product.id}" class="pris">${product.price},-</a>
-          <a href="produkt.html?id=${product.id}" class="add">READ MORE</a>
+          <p class="sale  ${!product.discount && "hide"} ${product.soldout && "hide"}">-${product.discount}%</p>
+          <p class="soldout  ${!product.soldout && "hide"} ">SOLD OUT</p>
+          <a href="produkt.html?id=${product.id}" class="navn ${product.soldout && "sold_out"}">/ ${product.productdisplayname}</a>
+          <a href="produkt.html?id=${product.id}" class="pris ${product.soldout && "sold_out"}">${product.price},-</a>
+          <a href="produkt.html?id=${product.id}" class="add ${product.soldout && "sold_out"}">READ MORE</a>
         </div>`
     )
     .join("");
