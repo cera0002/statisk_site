@@ -133,7 +133,7 @@
 .navn {
   margin-top: 10px;
   margin-bottom: 3px;
-  font-size: clamp(0.9rem, 2vw, 1.3rem);
+  font-size: clamp(1.1rem, 2vw, 1.6rem);
   font-variant-caps: all-small-caps;
   text-decoration: none;
   color: black;
@@ -141,7 +141,7 @@
 
 .pris {
   margin-bottom: 7px;
-  font-size: clamp(0.7rem, 2vw, 0.9rem);
+  font-size: clamp(0.8rem, 2vw, 1rem);
   color: rgb(127, 127, 127);
   text-decoration: none;
 }
@@ -152,7 +152,7 @@
   color: #bdbdbd;
 } */
 .add {
-  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  font-size: clamp(1rem, 2vw, 1.3rem);
   text-decoration: underline;
   font-variant-caps: all-small-caps;
   place-self: center;
