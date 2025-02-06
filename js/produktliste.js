@@ -10,7 +10,7 @@ if (myCategory) {
 
 let listContainer = document.querySelector(".product_list_container");
 
-fetch(`https://kea-alt-del.dk/t7/api/products?category=${myCategory}`)
+fetch(`https://kea-alt-del.dk/t7/api/products?category=${myCategory}&limit=30`)
   .then((response) => response.json())
 
   .then((data) => showList(data));
@@ -30,7 +30,10 @@ function showList(products) {
           <p class="sale  ${!product.discount && "hide"} ${product.soldout && "hide"}">-${product.discount}%</p>
           <p class="soldout  ${!product.soldout && "hide"} ">SOLD OUT</p>
           <a href="produkt.html?id=${product.id}" class="navn ${product.soldout && "sold_out"}">/ ${product.productdisplayname}</a>
-          <a href="produkt.html?id=${product.id}" class="pris ${product.soldout && "sold_out"}">${product.price},-</a>
+          <div class="price_container">
+          <a href="produkt.html?id=${product.id}" class="pris ${product.discount && "original_price"} ${product.soldout && "sold_out"}">${product.price},- </a>
+          <a href="produkt.html?id=${product.id}" class="new_price ${product.discount && "frem"}">${Math.floor(product.price * (1 - product.discount / 100))},-</a>
+          </div>  
           <a href="produkt.html?id=${product.id}" class="add ${product.soldout && "sold_out"}">READ MORE</a>
         </div>`
     )

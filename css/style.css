@@ -295,6 +295,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 4vh;
+  margin-top: 4vh;
 }
 .storrelser option {
   border: 1px solid black;
@@ -385,22 +386,27 @@ span.important {
   display: inline; /* Eller block, hvis det passer bedre */
 }
 
-/* .breadcrumbs {
-  display: flex;
+.original_price {
+  text-decoration: line-through;
+  margin-bottom: 7px;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  color: rgb(127, 127, 127);
 }
 
-.breadcrumbs li {
-  display: inline;
-  margin-top: 2vh;
-  display: flex;
-  justify-content: space-around;
-  color: #8d8c8c;
-  font-size: small;
-  margin-left: 8vw;
-  padding-top: 6px;
-  padding-bottom: 4px;
+.new_price {
+  visibility: hidden;
+  color: darkred;
+  text-decoration: none;
+  margin-bottom: 7px;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-weight: 590;
 }
 
-.breadcrumbs li a {
-  color: #333333;
-} */
+.price_container {
+  display: flex;
+  gap: 8px;
+}
+
+.frem {
+  visibility: visible;
+}

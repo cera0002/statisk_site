@@ -23,7 +23,10 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
         <div class="info">
           <p class="product_cat">${data.brandname} | ${data.category}</p>
           <h2 class="product_name_big">${data.productdisplayname} / ${data.basecolour}</h2>
-          <p class="price"><span class="important">${data.price},-</p>
+           <div class="price_container">
+          <p class="price ${data.discount && "original_price"} ${data.soldout && "sold_out"}"><span class="important">${data.price},-</p>
+          <p class="new_price ${data.discount && "frem"}">${Math.floor(data.price * (1 - data.discount / 100))},-</p>
+          </div>
           <form class="storrelser">
             <option>40</option>
             <option>41</option>
