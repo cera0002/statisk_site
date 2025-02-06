@@ -410,3 +410,9 @@ span.important {
 .frem {
   visibility: visible;
 }
+
+/* KNAPPER LAYOUT */
+
+.knapper {
+  margin-left: 8vw;
+}

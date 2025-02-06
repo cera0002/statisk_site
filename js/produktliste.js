@@ -10,10 +10,26 @@ if (myCategory) {
 
 let listContainer = document.querySelector(".product_list_container");
 
+let allData;
+
 fetch(`https://kea-alt-del.dk/t7/api/products?category=${myCategory}&limit=30`)
   .then((response) => response.json())
+  .then((json) => {
+    allData = json;
+    showList(allData);
+  });
 
-  .then((data) => showList(data));
+document.querySelectorAll("button").forEach((knap) => knap.addEventListener("click", showFiltered));
+
+function showFiltered() {
+  const filter = this.dataset.season;
+  if (filter == "All") {
+    showList(allData);
+  } else {
+    fraction = allData.filter((product) => product.season === filter);
+    showList(fraction);
+  }
+}
 
 function showList(products) {
   console.log(products);
