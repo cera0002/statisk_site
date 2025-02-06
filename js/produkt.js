@@ -14,21 +14,26 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
           <div class="image_container">
           <img
         src="https://kea-alt-del.dk/t7/images/webp/640/${productId}.webp"
-        alt="${data.productdisplayname}" class="product_pic" />  
-            <p class="sold_out">SALE | ${data.discount}%</p>
+        alt="${data.productdisplayname}" class="product_pic ${data.soldout && "sold_out"}" />  
+            <p class="sale_product ${!data.discount && "hide"} ${data.soldout && "hide"}">-${data.discount}%</p>
+            <p class="soldout_product  ${!data.soldout && "hide"} ">SOLD OUT</p>
           </div>
+          
         </div>
         <div class="info">
           <p class="product_cat">${data.brandname} | ${data.category}</p>
           <h2 class="product_name_big">${data.productdisplayname} / ${data.basecolour}</h2>
-          <p class="price"><span class="important">${data.price},-</span> | 1364,61,-</p>
+           <div class="price_container">
+          <p class="price ${data.discount && "original_price"} ${data.soldout && "sold_out"}"><span class="important">${data.price},-</p>
+          <p class="new_price ${data.discount && "frem"}">${Math.floor(data.price * (1 - data.discount / 100))},-</p>
+          </div>
           <form class="storrelser">
-            <option>40</option>
-            <option>41</option>
-            <option>42</option>
-            <option>43</option>
-            <option>44</option>
-            <option>45</option>
+            <option>XS</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
           </form>
           <h3 class="kob_cta">BUY NOW</h3>
           <h3 class="features">/ Product description</h3>
