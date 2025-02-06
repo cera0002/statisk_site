@@ -8,13 +8,17 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  margin-top: 20vh;
+  margin-top: 18.6vh;
+  color: white;
+  background-color: black;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 
 .hero span {
   display: inline-block;
   transform: scaleX(-1) translateX(-0.1rem);
-  color: #555555;
+  color: #a8a8a8;
 }
 
 /***** Style logo ******/
@@ -43,7 +47,7 @@
 .h_category {
   margin-top: 4vh;
   margin-left: 7.5vw;
-  margin-bottom: 8vh;
+  margin-bottom: 4vh;
   font-size: xx-large;
   font-weight: 500;
 }
@@ -414,5 +418,25 @@ span.important {
 /* KNAPPER LAYOUT */
 
 .knapper {
-  margin-left: 8vw;
+  margin-left: 7.5vw;
+  margin-bottom: 8vh;
+}
+
+button {
+  border: 1px solid black;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: black;
+  color: white;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  margin-right: 5px;
+}
+
+button:hover {
+  color: black;
+  background-color: white;
+  transition: 0.3s linear;
 }

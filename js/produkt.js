@@ -28,12 +28,12 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
           <p class="new_price ${data.discount && "frem"}">${Math.floor(data.price * (1 - data.discount / 100))},-</p>
           </div>
           <form class="storrelser">
-            <option>40</option>
-            <option>41</option>
-            <option>42</option>
-            <option>43</option>
-            <option>44</option>
-            <option>45</option>
+            <option>XS</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
           </form>
           <h3 class="kob_cta">BUY NOW</h3>
           <h3 class="features">/ Product description</h3>
